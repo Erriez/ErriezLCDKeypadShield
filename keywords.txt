@@ -1,0 +1,29 @@
+#######################################
+# LCD Keypad Shield library for Arduino
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+LCDKeypadShield		KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+getButtons			KEYWORD2
+backlightOn			KEYWORD2
+backlightOff		KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+ButtonNone		LITERAL1
+ButtonRight		LITERAL1
+ButtonUp		LITERAL1
+ButtonDown		LITERAL1
+ButtonLeft		LITERAL1
+ButtonSelect	LITERAL1
