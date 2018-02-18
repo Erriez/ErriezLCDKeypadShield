@@ -10,7 +10,7 @@ This is a LCD Keypad Shield library for Arduino which supports the following fea
 ## Hardware
 Any Arduino board, tested on Arduino UNO.
 
-![LCD Keypad Shield](https://raw.githubusercontent.com/ErriezLCDKeypadShield/master/extras/LCDKeypadShield_board.jpg)
+![LCD Keypad Shield](https://raw.githubusercontent.com/Erriez/ErriezLCDKeypadShield/master/extras/LCDKeypadShield_board.png)
 
 ## Example
 
