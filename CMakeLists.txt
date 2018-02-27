@@ -4,7 +4,6 @@ set(CMAKE_TOOLCHAIN_FILE ${CMAKE_SOURCE_DIR}/cmake/ArduinoToolchain.cmake)
 #-------------------------------------------------------------------------------
 # User configuration
 #-------------------------------------------------------------------------------
-
 # Set Arduino sketchbook directory
 if(WIN32)
     set(SKETCHBOOK_DIR  C:/Users/$ENV{USERNAME}/Documents/Arduino)
@@ -32,26 +31,26 @@ endif()
 set(PROJECT_NAME        ErriezLCDKeypadShield)
 
 # Set library directory
-set(ROTARY_SRC_DIR      ${SKETCHBOOK_DIR}/libraries/${PROJECT_NAME}/src)
+set(LIB_SRC_DIR         ${SKETCHBOOK_DIR}/libraries/${PROJECT_NAME}/src)
 
 # Configure project
 project(${PROJECT_NAME})
 
 # Configure include directories
-include_directories(${ROTARY_SRC_DIR})
+include_directories(${LIB_SRC_DIR})
 
 # Generate library
 generate_arduino_library(
-        LCDKeypadShieldLib
+        ${PROJECT_NAME}Lib
         SRCS
-            ${ROTARY_SRC_DIR}/LCDKeypadShield.cpp
+            ${LIB_SRC_DIR}/LCDKeypadShield.cpp
         HDRS
-            ${ROTARY_SRC_DIR}/LCDKeypadShield.h
+            ${LIB_SRC_DIR}/LCDKeypadShield.h
 )
 
 # Configure project
 set(${CMAKE_PROJECT_NAME}_SKETCH    ${SKETCH})
-set(${CMAKE_PROJECT_NAME}_LIBS      LCDKeypadShieldLib)
+set(${CMAKE_PROJECT_NAME}_LIBS      ${PROJECT_NAME}Lib)
 set(${CMAKE_PROJECT_NAME}_BOARD     ${BOARD})
 set(${CMAKE_PROJECT_NAME}_PORT      ${SERIAL_PORT})
 generate_arduino_firmware(${CMAKE_PROJECT_NAME})
