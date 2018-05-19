@@ -58,12 +58,12 @@
  * \brief LCD buttons
  */
 typedef enum {
-  ButtonNone = 0,
-  ButtonRight = 1,
-  ButtonUp = 2,
-  ButtonDown = 3,
-  ButtonLeft = 4,
-  ButtonSelect = 5
+    ButtonNone = 0,
+    ButtonRight = 1,
+    ButtonUp = 2,
+    ButtonDown = 3,
+    ButtonLeft = 4,
+    ButtonSelect = 5
 } LCDButton;
 
 /*!
@@ -72,11 +72,11 @@ typedef enum {
 class LCDKeypadShield : public LiquidCrystal
 {
 public:
-  LCDKeypadShield();
-  LCDButton getButtons();
+    LCDKeypadShield();
+    LCDButton getButtons();
 
-  void backlightOn();
-  void backlightOff();
+    void backlightOn();
+    void backlightOff();
 };
 
 #endif // LCD_KEYPAD_SHIELD_H__

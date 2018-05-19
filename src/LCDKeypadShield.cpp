@@ -49,15 +49,15 @@ LCDKeypadShield::LCDKeypadShield() :
     LiquidCrystal(LCD_PIN_RS, LCD_PIN_EN, 
                   LCD_PIN_D0, LCD_PIN_D1, LCD_PIN_D2, LCD_PIN_D3)
 {
-  // Initialize backlight pin
-  pinMode(LCD_BACK_LIGHT_PIN, OUTPUT);
-  
-  // Turn backlight on
-  backlightOn();
-  
-  // Initialize LCD
-  begin(16, 2);
-  setCursor(0, 0);
+    // Initialize backlight pin
+    pinMode(LCD_BACK_LIGHT_PIN, OUTPUT);
+
+    // Turn backlight on
+    backlightOn();
+
+    // Initialize LCD
+    begin(16, 2);
+    setCursor(0, 0);
 }
 
 /*!
@@ -66,37 +66,39 @@ LCDKeypadShield::LCDKeypadShield() :
  */
 LCDButton LCDKeypadShield::getButtons()
 {
-  static LCDButton keyLast = ButtonNone;
-  static unsigned long keyTimeLast = 0;
-  int analogKey = analogRead(0);
-  LCDButton key;
+    static LCDButton keyLast = ButtonNone;
+    static unsigned long keyTimeLast = 0;
+    int analogKey;
+    LCDButton key;
 
-  if ((millis() - keyTimeLast) < 100) {
-    return keyLast;
-  }
+    analogKey = analogRead(0);
 
-  keyTimeLast = millis();
+    if ((millis() - keyTimeLast) < 100) {
+        return keyLast;
+    }
 
-  if (analogKey < 50) {
-    key = ButtonRight;
-  } else if (analogKey < 200) {
-    key = ButtonUp;
-  } else if (analogKey < 300) {
-    key = ButtonDown;
-  } else if (analogKey < 500) {
-    key = ButtonLeft;
-  } else if (analogKey < 700) {
-    key = ButtonSelect;
-  } else {
-    key = ButtonNone;
-  }
+    keyTimeLast = millis();
 
-  if (key == keyLast) {
-    return key;
-  } else {
-    keyLast = key;
-    return ButtonNone;
-  }
+    if (analogKey < 50) {
+        key = ButtonRight;
+    } else if (analogKey < 200) {
+        key = ButtonUp;
+    } else if (analogKey < 300) {
+        key = ButtonDown;
+    } else if (analogKey < 500) {
+        key = ButtonLeft;
+    } else if (analogKey < 700) {
+        key = ButtonSelect;
+    } else {
+        key = ButtonNone;
+    }
+
+    if (key == keyLast) {
+        return key;
+    } else {
+        keyLast = key;
+        return ButtonNone;
+    }
 }
 
 /*!
@@ -104,7 +106,7 @@ LCDButton LCDKeypadShield::getButtons()
  */
 void LCDKeypadShield::backlightOn()
 {
-  digitalWrite(LCD_BACK_LIGHT_PIN, HIGH);
+    digitalWrite(LCD_BACK_LIGHT_PIN, HIGH);
 }
 
 /*!
@@ -112,5 +114,5 @@ void LCDKeypadShield::backlightOn()
  */
 void LCDKeypadShield::backlightOff()
 {
-  digitalWrite(LCD_BACK_LIGHT_PIN, LOW);
+    digitalWrite(LCD_BACK_LIGHT_PIN, LOW);
 }
