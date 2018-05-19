@@ -37,17 +37,26 @@
 #include <Arduino.h>
 #include <LiquidCrystal.h>
 
+#if !defined(ARDUINO_AVR_UNO) && \
+    !defined(ARDUINO_AVR_LEONARDO) && \
+    !defined(ARDUINO_AVR_MEGA2560)
+#warning "The library ErriezLCDKeypadShield has not been tested with this MCU"
+#endif
+
 // Hard-wired LCD pins in 4-bit mode:
-#define LCD_PIN_RS          8
-#define LCD_PIN_EN          9
-#define LCD_PIN_D0          4
-#define LCD_PIN_D1          5
-#define LCD_PIN_D2          6
-#define LCD_PIN_D3          7
+#define LCD_PIN_RS          8   //!< LCD RS pin
+#define LCD_PIN_EN          9   //!< LCD EN pin
+#define LCD_PIN_D0          4   //!< LCD D0 pin
+#define LCD_PIN_D1          5   //!< LCD D1 pin
+#define LCD_PIN_D2          6   //!< LCD D2 pin
+#define LCD_PIN_D3          7   //!< LCD D3 pin
 
 // Backlight pin
-#define LCD_BACK_LIGHT_PIN  10
+#define LCD_BACK_LIGHT_PIN  10  //!< LCD backlight pin
 
+/*!
+ * \brief LCD buttons
+ */
 typedef enum {
   ButtonNone = 0,
   ButtonRight = 1,

@@ -39,6 +39,12 @@
 
 #include "LCDKeypadShield.h"
 
+/*!
+ * \brief Constructor LCDKeypadShield class
+ * \details
+ *      This initializes the built-in LiquidCrystal library in 4-bit mode:
+ *      - RS, EN, D0, D1, D2 and D3 pins
+ */
 LCDKeypadShield::LCDKeypadShield() :
     LiquidCrystal(LCD_PIN_RS, LCD_PIN_EN, 
                   LCD_PIN_D0, LCD_PIN_D1, LCD_PIN_D2, LCD_PIN_D3)
@@ -54,6 +60,10 @@ LCDKeypadShield::LCDKeypadShield() :
   setCursor(0, 0);
 }
 
+/*!
+ * \brief Read buttons from one analog pin
+ * \return LCDButton enum
+ */
 LCDButton LCDKeypadShield::getButtons()
 {
   static LCDButton keyLast = ButtonNone;
@@ -89,11 +99,17 @@ LCDButton LCDKeypadShield::getButtons()
   }
 }
 
+/*!
+ * \brief Turn backlight LED on
+ */
 void LCDKeypadShield::backlightOn()
 {
   digitalWrite(LCD_BACK_LIGHT_PIN, HIGH);
 }
 
+/*!
+ * \brief Turn backlight LED off
+ */
 void LCDKeypadShield::backlightOff()
 {
   digitalWrite(LCD_BACK_LIGHT_PIN, LOW);
