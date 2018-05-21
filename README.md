@@ -94,7 +94,7 @@ LCDButtons button = shield.getButtons();
 
 ## Documentation
 
-- [Doxygen online HTML](https://Erriez.github.io/ErriezLCDKeypadShield)
+- [Doxygen online HTML](https://Erriez.github.io/ErriezLCDKeypadShield/)
 - [Doxygen PDF](https://github.com/Erriez/ErriezLCDKeypadShield/raw/master/docs/latex/refman.pdf)
 
 ## Library installation
