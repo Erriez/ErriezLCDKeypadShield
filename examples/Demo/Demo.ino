@@ -22,10 +22,11 @@
  * SOFTWARE.
  */
 
-/* LCD Keypad Shield example demo
- *
- * Required libraries:
- *   https://github.com/Erriez/ErriezLCDKeypadShield
+/*!
+ * \file Demo.ino
+ * \brief LCD Keypad Shield example demo
+ * \details
+ *    Source: https://github.com/Erriez/ErriezLCDKeypadShield
  */
 
 #include <Arduino.h>
@@ -33,53 +34,54 @@
 
 LCDKeypadShield shield;
 
+
 void setup(void)
 {
-  shield.backlightOn();
-  shield.print(F("Push the buttons"));
-
-  // Backlight control
-  for (uint8_t i = 0; i < 3; i++) {
-    // Turn backlight off
-    shield.backlightOff();
-    delay(500);
-
-    // Turn backlight on
     shield.backlightOn();
-    delay(500);
-  }
+    shield.print(F("Push the buttons"));
+
+    // Backlight control
+    for (uint8_t i = 0; i < 3; i++) {
+        // Turn backlight off
+        shield.backlightOff();
+        delay(500);
+
+        // Turn backlight on
+        shield.backlightOn();
+        delay(500);
+    }
 }
 
 void loop(void)
 {
-  // Display seconds elapsed since power-up
-  shield.setCursor(9, 1);
-  shield.print(millis() / 1000);
+    // Display seconds elapsed since power-up
+    shield.setCursor(9, 1);
+    shield.print(millis() / 1000);
 
-  // Set cursor start second line
-  shield.setCursor(0, 1);
+    // Set cursor start second line
+    shield.setCursor(0, 1);
 
-  // Read buttons
-  switch (shield.getButtons()) {
-    case ButtonRight:
-      shield.print(F("RIGHT "));
-      break;
-    case ButtonLeft:
-      shield.print(F("LEFT  "));
-      break;
-    case ButtonUp:
-      shield.print(F("UP    "));
-      break;
-    case ButtonDown:
-      shield.print(F("DOWN  "));
-      break;
-    case ButtonSelect:
-      shield.print(F("SELECT"));
-      break;
-    case ButtonNone:
-      shield.print(F("NONE  "));
-      break;
-    default:
-      break;
-  }
+    // Read buttons
+    switch (shield.getButtons()) {
+        case ButtonRight:
+            shield.print(F("RIGHT "));
+            break;
+        case ButtonLeft:
+            shield.print(F("LEFT  "));
+            break;
+        case ButtonUp:
+            shield.print(F("UP    "));
+            break;
+        case ButtonDown:
+            shield.print(F("DOWN  "));
+            break;
+        case ButtonSelect:
+            shield.print(F("SELECT"));
+            break;
+        case ButtonNone:
+            shield.print(F("NONE  "));
+            break;
+        default:
+            break;
+    }
 }
