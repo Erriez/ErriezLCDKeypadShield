@@ -23,10 +23,8 @@
  */
 
 /*!
- * \file
- *     LCDKeypadShield.h
- * \brief
- *     LCD Keypad Shield library for Arduino
+ * \file LCDKeypadShield.h
+ * \brief LCD Keypad Shield library for Arduino
  * \details
  *     Source: https://github.com/Erriez/ErriezLCDKeypadShield
  */
