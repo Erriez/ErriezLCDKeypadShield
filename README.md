@@ -1,4 +1,5 @@
 # LCD Keypad Shield library for Arduino
+[![Build Status](https://travis-ci.org/Erriez/ErriezLCDKeypadShield.svg?branch=master)](https://travis-ci.org/Erriez/ErriezLCDKeypadShield)
 
 This is a LCD Keypad Shield library for Arduino which supports the following features:
 
@@ -14,7 +15,7 @@ Any Arduino board, tested on Arduino UNO.
 
 ## Example
 
-Examples | ErriezLCDKeypadShield:
+Examples | Erriez LCDKeypadShield:
 
 * [Demo](https://github.com/Erriez/ErriezLCDKeypadShield/blob/master/examples/Demo/Demo.ino)  
 
@@ -87,3 +88,15 @@ LCDButtons button = shield.getButtons();
 //   ButtonSelect
 ```
 
+## Library dependencies
+
+- Arduino's build-in ```LiquidCrystal``` library.
+
+## Documentation
+
+- [Doxygen online HTML](https://Erriez.github.io/ErriezLCDKeypadShield)
+- [Doxygen PDF](https://github.com/Erriez/ErriezLCDKeypadShield/raw/master/docs/latex/refman.pdf)
+
+## Library installation
+
+Please refer to the [Wiki](https://github.com/Erriez/ErriezArduinoLibrariesAndSketches/wiki) page.
