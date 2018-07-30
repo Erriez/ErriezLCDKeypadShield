@@ -92,11 +92,18 @@ LCDButtons button = shield.getButtons();
 
 - Arduino's build-in ```LiquidCrystal``` library.
 
+
 ## Documentation
 
 - [Doxygen online HTML](https://Erriez.github.io/ErriezLCDKeypadShield/)
 - [Doxygen PDF](https://github.com/Erriez/ErriezLCDKeypadShield/raw/master/docs/latex/refman.pdf)
 
+
 ## Library installation
 
 Please refer to the [Wiki](https://github.com/Erriez/ErriezArduinoLibrariesAndSketches/wiki) page.
+
+
+## Other Arduino Libraries and Sketches from Erriez
+
+* [Erriez Libraries and Sketches](https://github.com/Erriez/ErriezArduinoLibrariesAndSketches)
