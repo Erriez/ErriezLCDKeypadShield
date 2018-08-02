@@ -1,0 +1,142 @@
+\href{https://travis-ci.org/Erriez/ErriezLCDKeypadShield}{\tt }
+
+This is a L\+CD Keypad Shield library for Arduino which supports the following features\+:
+
+
+\begin{DoxyItemize}
+\item 2x16 L\+CD using {\ttfamily Liquid\+Crystal.\+h}.
+\item 5 pushbuttons connected to analog pin A0.
+\item Button debouncing.
+\item Backlight control (on/off).
+\end{DoxyItemize}
+
+\subsection*{Hardware}
+
+Any Arduino board, tested on Arduino U\+NO.
+
+
+
+\subsection*{Example}
+
+Examples $\vert$ Erriez \hyperlink{class_l_c_d_keypad_shield}{L\+C\+D\+Keypad\+Shield}\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/Erriez/ErriezLCDKeypadShield/blob/master/examples/Demo/Demo.ino}{\tt Demo}
+\end{DoxyItemize}
+
+\subsection*{Documentation}
+
+
+\begin{DoxyItemize}
+\item \href{https://Erriez.github.io/ErriezLCDKeypadShield}{\tt Online H\+T\+ML}
+\item \href{https://github.com/Erriez/ErriezLCDKeypadShield/raw/gh-pages/latex/ErriezLCDKeypadShield.pdf}{\tt Download P\+DF}
+\end{DoxyItemize}
+
+\subsection*{Usage}
+
+{\bfseries Initialization}
+
+
+\begin{DoxyCode}
+1 \{c++\}
+2 #include <Arduino.h>
+3 #include <LCDKeypadShield.h>
+4 
+5 LCDKeypadShield shield;
+\end{DoxyCode}
+
+
+\subsubsection*{Backlight control}
+
+{\bfseries Backlight on}
+
+
+\begin{DoxyCode}
+1 \{c++\}
+2 shield.backlightOn();
+\end{DoxyCode}
+
+
+{\bfseries Backlight off}
+
+
+\begin{DoxyCode}
+1 \{c++\}
+2 shield.backlightOff();
+\end{DoxyCode}
+
+
+\subsubsection*{Display control}
+
+All {\ttfamily \hyperlink{_l_c_d_keypad_shield_8h}{L\+C\+D\+Keypad\+Shield.\+h}} functions can be used.
+
+{\bfseries Clear display}
+
+
+\begin{DoxyCode}
+1 \{c++\}
+2 shield.clear();
+\end{DoxyCode}
+
+
+{\bfseries Set cursor}
+
+
+\begin{DoxyCode}
+1 \{c++\}
+2 // First character first line
+3 shield.setCursor(0, 0);
+4 
+5 // First character second line
+6 shield.setCursor(0, 1);
+7 
+8 // Last character second line
+9 shield.setCursor(15, 1);
+\end{DoxyCode}
+
+
+{\bfseries Print text}
+
+
+\begin{DoxyCode}
+1 \{c++\}
+2 shield.print(F("Push the buttons"));
+\end{DoxyCode}
+
+
+\subsubsection*{Button control}
+
+{\bfseries Get buttons}
+
+
+\begin{DoxyCode}
+1 \{c++\}
+2 LCDButtons button = shield.getButtons();
+3 // Returned button enum:
+4 //   ButtonNone
+5 //   ButtonRight
+6 //   ButtonUp
+7 //   ButtonDown
+8 //   ButtonLeft
+9 //   ButtonSelect
+\end{DoxyCode}
+
+
+\subsection*{Library dependencies}
+
+
+\begin{DoxyItemize}
+\item Arduino\textquotesingle{}s build-\/in {\ttfamily Liquid\+Crystal} library.
+\end{DoxyItemize}
+
+\subsection*{Library installation}
+
+Please refer to the \href{https://github.com/Erriez/ErriezArduinoLibrariesAndSketches/wiki}{\tt Wiki} page.
+
+\subsection*{Other Arduino Libraries and Sketches from Erriez}
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/Erriez/ErriezArduinoLibrariesAndSketches}{\tt Erriez Libraries and Sketches} 
+\end{DoxyItemize}
