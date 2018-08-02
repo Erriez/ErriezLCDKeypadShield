@@ -8,16 +8,25 @@ This is a LCD Keypad Shield library for Arduino which supports the following fea
 * Button debouncing.
 * Backlight control (on/off).
 
+
 ## Hardware
 Any Arduino board, tested on Arduino UNO.
 
 ![LCD Keypad Shield](https://raw.githubusercontent.com/Erriez/ErriezLCDKeypadShield/master/extras/LCDKeypadShield_board.png)
+
 
 ## Example
 
 Examples | Erriez LCDKeypadShield:
 
 * [Demo](https://github.com/Erriez/ErriezLCDKeypadShield/blob/master/examples/Demo/Demo.ino)  
+
+
+## Documentation
+
+- [Online HTML](https://Erriez.github.io/ErriezLCDKeypadShield)
+- [Download PDF](https://github.com/Erriez/ErriezLCDKeypadShield/raw/gh-pages/latex/ErriezLCDKeypadShield.pdf)
+
 
 ## Usage
 
@@ -91,12 +100,6 @@ LCDButtons button = shield.getButtons();
 ## Library dependencies
 
 - Arduino's build-in ```LiquidCrystal``` library.
-
-
-## Documentation
-
-- [Doxygen online HTML](https://Erriez.github.io/ErriezLCDKeypadShield/)
-- [Doxygen PDF](https://github.com/Erriez/ErriezLCDKeypadShield/raw/master/docs/latex/refman.pdf)
 
 
 ## Library installation
