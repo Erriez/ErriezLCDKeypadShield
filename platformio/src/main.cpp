@@ -26,7 +26,8 @@
  * \file Demo.ino
  * \brief LCD Keypad Shield example demo
  * \details
- *    Source: https://github.com/Erriez/ErriezLCDKeypadShield
+ *      Source:         https://github.com/Erriez/ErriezLCDKeypadShield
+ *      Documentation:  https://erriez.github.io/ErriezLCDKeypadShield
  */
 
 #include <Arduino.h>

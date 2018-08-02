@@ -17,9 +17,9 @@ Any Arduino board, tested on Arduino UNO.
 
 ## Example
 
-Examples | Erriez LCDKeypadShield:
+Arduion IDE | Examples | Erriez LCDKeypadShield:
 
-* [Demo](https://github.com/Erriez/ErriezLCDKeypadShield/blob/master/examples/Demo/Demo.ino)  
+* [LCDKeypadShield](https://github.com/Erriez/ErriezLCDKeypadShield/blob/master/examples/LCDKeypadShield/LCDKeypadShield.ino)
 
 
 ## Documentation

@@ -12,7 +12,7 @@ elseif(UNIX)
 endif()
 
 # Configure one sketch
-set(SKETCH      examples/Demo/Demo.ino)
+set(SKETCH examples/LCDKeypadShield/LCDKeypadShield.ino)
 
 # Configure board, default Arduino UNO
 set(BOARD       uno)

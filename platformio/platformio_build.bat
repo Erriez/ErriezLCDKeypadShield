@@ -10,4 +10,4 @@ rem git fetch
 rem git pull
 
 rem Build example(s)
-platformio ci --lib=".." --project-conf=platformio.ini ../examples/Demo/Demo.ino
+platformio ci --lib=".." --project-conf=platformio.ini ../examples/LCDKeypadShield/LCDKeypadShield.ino
