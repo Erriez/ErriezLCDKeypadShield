@@ -29,7 +29,6 @@
  *      Documentation:  https://erriez.github.io/ErriezLCDKeypadShield
  */
 
-#include <Arduino.h>
 #include <ErriezLCDKeypadShield.h>
 
 LCDKeypadShield shield;

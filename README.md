@@ -33,7 +33,6 @@ Arduion IDE | Examples | Erriez LCDKeypadShield:
 **Initialization**
 
 ```c++
-#include <Arduino.h>
 #include <ErriezLCDKeypadShield.h>
 
 LCDKeypadShield shield;
