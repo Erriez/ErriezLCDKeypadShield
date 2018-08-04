@@ -11,3 +11,5 @@ rem git pull
 
 rem Build example(s)
 platformio ci --lib=".." --project-conf=platformio.ini ../examples/LCDKeypadShield/LCDKeypadShield.ino
+
+@pause
