@@ -23,7 +23,6 @@
  */
 
 /*!
- * \file Demo.ino
  * \brief LCD Keypad Shield example demo
  * \details
  *      Source:         https://github.com/Erriez/ErriezLCDKeypadShield
