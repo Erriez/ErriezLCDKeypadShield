@@ -23,7 +23,7 @@
  */
 
 /*!
- * \file LCDKeypadShield.cpp
+ * \file ErriezLCDKeypadShield.cpp
  * \brief LCD Keypad Shield library for Arduino
  * \details
  *      Source:         https://github.com/Erriez/ErriezLCDKeypadShield
@@ -36,7 +36,7 @@
 #include <pgmspace.h>
 #endif
 
-#include "LCDKeypadShield.h"
+#include "ErriezLCDKeypadShield.h"
 
 /*!
  * \brief Constructor LCDKeypadShield class

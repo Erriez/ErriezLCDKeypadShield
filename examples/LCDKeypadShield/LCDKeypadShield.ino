@@ -31,7 +31,7 @@
  */
 
 #include <Arduino.h>
-#include <LCDKeypadShield.h>
+#include <ErriezLCDKeypadShield.h>
 
 LCDKeypadShield shield;
 

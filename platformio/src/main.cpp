@@ -23,7 +23,6 @@
  */
 
 /*!
- * \file Demo.ino
  * \brief LCD Keypad Shield example demo
  * \details
  *      Source:         https://github.com/Erriez/ErriezLCDKeypadShield
@@ -31,7 +30,7 @@
  */
 
 #include <Arduino.h>
-#include <LCDKeypadShield.h>
+#include <ErriezLCDKeypadShield.h>
 
 LCDKeypadShield shield;
 

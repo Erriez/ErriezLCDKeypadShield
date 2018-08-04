@@ -34,7 +34,7 @@ Arduion IDE | Examples | Erriez LCDKeypadShield:
 
 ```c++
 #include <Arduino.h>
-#include <LCDKeypadShield.h>
+#include <ErriezLCDKeypadShield.h>
 
 LCDKeypadShield shield;
 ```

@@ -23,15 +23,15 @@
  */
 
 /*!
- * \file LCDKeypadShield.h
+ * \file ErriezLCDKeypadShield.h
  * \brief LCD Keypad Shield library for Arduino
  * \details
  *      Source:         https://github.com/Erriez/ErriezLCDKeypadShield
  *      Documentation:  https://erriez.github.io/ErriezLCDKeypadShield
  */
 
-#ifndef LCD_KEYPAD_SHIELD_H__
-#define LCD_KEYPAD_SHIELD_H__
+#ifndef ERRIEZ_LCD_KEYPAD_SHIELD_H_
+#define ERRIEZ_LCD_KEYPAD_SHIELD_H_
 
 #include <Arduino.h>
 #include <LiquidCrystal.h>
@@ -78,4 +78,4 @@ public:
     void backlightOff();
 };
 
-#endif // LCD_KEYPAD_SHIELD_H__
+#endif // ERRIEZ_LCD_KEYPAD_SHIELD_H_

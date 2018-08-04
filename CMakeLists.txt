@@ -43,9 +43,9 @@ include_directories(${LIB_SRC_DIR})
 generate_arduino_library(
         ${PROJECT_NAME}Lib
         SRCS
-            ${LIB_SRC_DIR}/LCDKeypadShield.cpp
+            ${LIB_SRC_DIR}/ErriezLCDKeypadShield.cpp
         HDRS
-            ${LIB_SRC_DIR}/LCDKeypadShield.h
+            ${LIB_SRC_DIR}/ErriezLCDKeypadShield.h
 )
 
 # Configure project
