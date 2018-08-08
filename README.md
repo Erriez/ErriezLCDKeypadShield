@@ -14,6 +14,17 @@ Any Arduino board, tested on Arduino UNO.
 
 ![LCD Keypad Shield](https://raw.githubusercontent.com/Erriez/ErriezLCDKeypadShield/master/extras/LCDKeypadShield_board.png)
 
+### Pins
+
+| 2x16 LCD pins | UNO/Leonardo/Mega2560 |
+| ------------- | --------------------- |
+| RS            | 8                     |
+| EN            | 9                     |
+| D0            | 4                     |
+| D1            | 5                     |
+| D2            | 6                     |
+| D3            | 7                     |
+| Backlight     | 10                    |
 
 ## Example
 
