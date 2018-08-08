@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.8.4)  4 AUG 2018 12:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.8.8)  8 AUG 2018 19:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1129,10 +1129,13 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 10.79993pt on input line 13.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 49.
+(Font)              scaled to size 8.99994pt on input line 19.
  [1
 
-]) [2]
+] [2]) [3]
+[4
+
+]
 Chapter 2.
 (./hierarchy.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
@@ -1141,22 +1144,20 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
-) [3
-
-] [4
+) [5] [6
 
 ]
 Chapter 3.
-(./annotated.tex) [5] [6
+(./annotated.tex) [7] [8
 
 ]
 Chapter 4.
-(./files.tex) [7] [8
+(./files.tex) [9] [10
 
 ]
 Chapter 5.
 (./class_l_c_d_keypad_shield.tex
-<class_l_c_d_keypad_shield.pdf, id=185, 501.875pt x 326.41951pt>
+<class_l_c_d_keypad_shield.pdf, id=196, 501.875pt x 326.41951pt>
 File: class_l_c_d_keypad_shield.pdf Graphic file (type pdf)
 
 <use class_l_c_d_keypad_shield.pdf>
@@ -1172,12 +1173,12 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 22.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 6.29996pt on input line 22.
- [9 <./class_l_c_d_keypad_shield.pdf>]
+ [11 <./class_l_c_d_keypad_shield.pdf>]
 Underfull \hbox (badness 10000) detected at line 73
 [][][]
  []
 
-) [10]
+) [12]
 Chapter 6.
 (./_erriez_l_c_d_keypad_shield_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
@@ -1196,7 +1197,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-[11
+[13
 
 ])
 Underfull \hbox (badness 7504) in paragraph at lines 58--154
@@ -1205,7 +1206,7 @@ Underfull \hbox (badness 7504) in paragraph at lines 58--154
 r/m/n/10 https[]
  []
 
-[12] (./refman.ind [13
+[14] (./refman.ind [15
 
 
 
@@ -1217,17 +1218,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 9BB888BDBFBF98E0B730F8BB3A890BD1;3733.
+(rerunfilecheck)             Checksum: 494E552B6CED0316D7236E73FF729683;3733.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 14713 strings out of 495028
- 209622 string characters out of 6181498
- 299468 words of memory out of 5000000
- 17607 multiletter control sequences out of 15000+600000
+ 14741 strings out of 495028
+ 209872 string characters out of 6181498
+ 299506 words of memory out of 5000000
+ 17631 multiletter control sequences out of 15000+600000
  56008 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 53i,15n,92p,826b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,16n,92p,826b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
@@ -1237,10 +1238,10 @@ rw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (17 pages, 106739 bytes).
+Output written on refman.pdf (19 pages, 108419 bytes).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
+ 323 PDF objects out of 1000 (max. 8388607)
+ 288 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
