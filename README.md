@@ -107,6 +107,26 @@ LCDButtons button = shield.getButtons();
 //   ButtonSelect
 ```
 
+**Improve response**
+
+The resistors may be different for each board to read the analog key value. To improve response, experiment by updating the analogKey values in: `src\ErriezLCDKeypadShield.cpp`:
+
+```c++
+if (analogKey < 50) { /* <= Incread/decrease value 50 */
+key = ButtonRight;
+} else if (analogKey < 200) { /* <= Incread/decrease value 200 */
+key = ButtonUp;
+} else if (analogKey < 350) { /* <= Incread/decrease value 350 */
+key = ButtonDown;
+} else if (analogKey < 500) { /* <= Incread/decrease value 500 */
+key = ButtonLeft;
+} else if (analogKey < 750) { /* <= Incread/decrease value 750 */
+key = ButtonSelect;
+} else {
+key = ButtonNone;
+}
+```
+
 ## Library dependencies
 
 - Arduino's build-in ```LiquidCrystal``` library.
