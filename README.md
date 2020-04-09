@@ -1,4 +1,4 @@
-# LCD Keypad Shield library for Arduino
+# Erriez LCD Keypad Shield library for Arduino
 [![Build Status](https://travis-ci.org/Erriez/ErriezLCDKeypadShield.svg?branch=master)](https://travis-ci.org/Erriez/ErriezLCDKeypadShield)
 
 This is a LCD Keypad Shield library for Arduino which supports the following features:
@@ -113,17 +113,17 @@ The resistors may be different for each board to read the analog key value. To i
 
 ```c++
 if (analogKey < 50) { /* <= Incread/decrease value 50 */
-key = ButtonRight;
+	key = ButtonRight;
 } else if (analogKey < 200) { /* <= Incread/decrease value 200 */
-key = ButtonUp;
+	key = ButtonUp;
 } else if (analogKey < 350) { /* <= Incread/decrease value 350 */
-key = ButtonDown;
+	key = ButtonDown;
 } else if (analogKey < 500) { /* <= Incread/decrease value 500 */
-key = ButtonLeft;
+	key = ButtonLeft;
 } else if (analogKey < 750) { /* <= Incread/decrease value 750 */
-key = ButtonSelect;
+	key = ButtonSelect;
 } else {
-key = ButtonNone;
+	key = ButtonNone;
 }
 ```
 
