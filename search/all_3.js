@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['lcd_20keypad_20shield_20library_20for_20arduino',['LCD Keypad Shield library for Arduino',['../index.html',1,'']]],
   ['lcd_5fback_5flight_5fpin',['LCD_BACK_LIGHT_PIN',['../_erriez_l_c_d_keypad_shield_8h.html#a429569b08712c209a5799cf33e6153fa',1,'ErriezLCDKeypadShield.h']]],
   ['lcd_5fpin_5fd0',['LCD_PIN_D0',['../_erriez_l_c_d_keypad_shield_8h.html#a8a66f345a8eeae20b15759c685db6b57',1,'ErriezLCDKeypadShield.h']]],
   ['lcd_5fpin_5fd1',['LCD_PIN_D1',['../_erriez_l_c_d_keypad_shield_8h.html#ad6afc7eeae47046d74b841ad953a964a',1,'ErriezLCDKeypadShield.h']]],

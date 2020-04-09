@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Erriez LCD Keypad Shield library for Arduino: LCD Keypad Shield library for Arduino</title>
+<title>Erriez LCD Keypad Shield library for Arduino: Erriez LCD Keypad Shield library for Arduino</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div class="header">
   <div class="headertitle">
-<div class="title">LCD Keypad Shield library for Arduino </div>  </div>
+<div class="title">Erriez LCD Keypad Shield library for Arduino </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a href="https://travis-ci.org/Erriez/ErriezLCDKeypadShield"></a></p>
@@ -121,7 +121,7 @@ $(function() {
 <p><b>Get buttons</b></p>
 <div class="fragment"><div class="line">{c++}</div><div class="line">LCDButtons button = shield.getButtons();</div><div class="line">// Returned button enum:</div><div class="line">//   ButtonNone</div><div class="line">//   ButtonRight</div><div class="line">//   ButtonUp</div><div class="line">//   ButtonDown</div><div class="line">//   ButtonLeft</div><div class="line">//   ButtonSelect</div></div><!-- fragment --><p><b>Improve response</b></p>
 <p>The resistors may be different for each board to read the analog key value. To improve response, experiment by updating the analogKey values in: <code>src\<a class="el" href="_erriez_l_c_d_keypad_shield_8cpp.html" title="LCD Keypad Shield library for Arduino. ">ErriezLCDKeypadShield.cpp</a></code>:</p>
-<div class="fragment"><div class="line">{c++}</div><div class="line">if (analogKey &lt; 50) { /* &lt;= Incread/decrease value 50 */</div><div class="line">key = ButtonRight;</div><div class="line">} else if (analogKey &lt; 200) { /* &lt;= Incread/decrease value 200 */</div><div class="line">key = ButtonUp;</div><div class="line">} else if (analogKey &lt; 350) { /* &lt;= Incread/decrease value 350 */</div><div class="line">key = ButtonDown;</div><div class="line">} else if (analogKey &lt; 500) { /* &lt;= Incread/decrease value 500 */</div><div class="line">key = ButtonLeft;</div><div class="line">} else if (analogKey &lt; 750) { /* &lt;= Incread/decrease value 750 */</div><div class="line">key = ButtonSelect;</div><div class="line">} else {</div><div class="line">key = ButtonNone;</div><div class="line">}</div></div><!-- fragment --><h2>Library dependencies</h2>
+<div class="fragment"><div class="line">{c++}</div><div class="line">if (analogKey &lt; 50) { /* &lt;= Incread/decrease value 50 */</div><div class="line">    key = ButtonRight;</div><div class="line">} else if (analogKey &lt; 200) { /* &lt;= Incread/decrease value 200 */</div><div class="line">    key = ButtonUp;</div><div class="line">} else if (analogKey &lt; 350) { /* &lt;= Incread/decrease value 350 */</div><div class="line">    key = ButtonDown;</div><div class="line">} else if (analogKey &lt; 500) { /* &lt;= Incread/decrease value 500 */</div><div class="line">    key = ButtonLeft;</div><div class="line">} else if (analogKey &lt; 750) { /* &lt;= Incread/decrease value 750 */</div><div class="line">    key = ButtonSelect;</div><div class="line">} else {</div><div class="line">    key = ButtonNone;</div><div class="line">}</div></div><!-- fragment --><h2>Library dependencies</h2>
 <ul>
 <li>Arduino's build-in <code>LiquidCrystal</code> library.</li>
 </ul>
