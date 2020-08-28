@@ -1,5 +1,10 @@
 #/bin/bash
 
+# Automatic build script
+#
+# To run locally, execute:
+# sudo apt install doxygen graphviz texlive-latex-base texlive-latex-recommended texlive-pictures texlive-latex-extra
+
 # Exit immediately if a command exits with a non-zero status.
 set -e
 
@@ -9,17 +14,13 @@ echo "Starting auto-build script..."
 function autobuild()
 {
     # Set environment variables
-    BOARDS_AVR="--board uno --board megaatmega2560 --board leonardo"
+    BOARDS_AVR="--board uno --board micro --board miniatmega328 --board nanoatmega328new --board pro16MHzatmega328 --board pro8MHzatmega328 --board megaatmega2560 --board leonardo"
 
-    echo "Install libraries"
+    echo "Installing library dependencies"
     platformio lib -g install "LiquidCrystal"
 
-    echo "Build examples..."
-    platformio ci \
-        --lib="." \
-        ${BOARDS_AVR} \
-        --project-option="lib_deps=Wire" \
-        examples/LCDKeypadShield/LCDKeypadShield.ino
+    echo "Building examples..."
+    platformio ci --lib="." ${BOARDS_AVR} --project-option="lib_deps=Wire" examples/ErriezLCDKeypadShield/ErriezLCDKeypadShield.ino
 }
 
 function generate_doxygen()
@@ -49,4 +50,3 @@ function generate_doxygen()
 
 autobuild
 generate_doxygen
-
